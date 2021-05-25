@@ -1,0 +1,21 @@
+{
+  "configs": [
+    "assertion-munit-test.xml"
+  ],
+  "redeploymentEnabled": true,
+  "name": "Hello Smart Connector",
+  "minMuleVersion": "4.1.1",
+  "requiredProduct": "MULE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "includeTestDependencies": "true",
+      "exportedPackages": [],
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

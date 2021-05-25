@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="Hello Smart Connector" prefix="module-hello"
+	doc:description="This module relies in runtime provided components"
+
+	xmlns="http://www.mulesoft.org/schema/mule/module"
+	xmlns:mule="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:tns="http://www.mulesoft.org/schema/mule/module-hello"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+           http://www.mulesoft.org/schema/mule/module http://www.mulesoft.org/schema/mule/module/current/mule-module.xsd
+           http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+           http://www.mulesoft.org/schema/mule/module-hello http://www.mulesoft.org/schema/mule/module-hello/current/mule-module-hello.xsd">
+
+	<operation name="CalculateSquare"
+		doc:description="Calculates the square of a number">
+		<parameters>
+			<parameter name="Input_Number" type="number" use="REQUIRED"
+				displayName="Input Number"
+				summary="Number whose sqaure is to be calulated" />
+		</parameters>
+		<body>
+			<mule:set-payload
+				value="#[vars.Input_Number*vars.Input_Number]" />
+		</body>
+		<output type="number" doc:description="Payload's output" />
+	</operation>
+
+</module>

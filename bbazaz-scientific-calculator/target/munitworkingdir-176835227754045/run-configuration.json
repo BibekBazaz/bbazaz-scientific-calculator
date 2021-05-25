@@ -1,0 +1,41 @@
+{
+  "runToken": "91cc3a70-014f-4a5d-9087-5841997bd049",
+  "projectName": "bbazaz-scientific-calculator-test-application",
+  "domainLocation": "",
+  "tags": [],
+  "testNames": [],
+  "suitePaths": [
+    "assertion-munit-test.xml"
+  ],
+  "allSuitePaths": [
+    "assertion-munit-test.xml"
+  ],
+  "skipAfterFailure": false,
+  "notifierConfigurations": [
+    {
+      "clazz": "org.mule.munit.remote.notifiers.ConsoleNotifier",
+      "parameters": [
+        {
+          "name": "runToken",
+          "type": "java.lang.String",
+          "value": "91cc3a70-014f-4a5d-9087-5841997bd049"
+        }
+      ]
+    }
+  ],
+  "containerConfiguration": {
+    "runtimeId": "4.1.1",
+    "product": "MULE",
+    "munitWorkingDirectoryPath": "/Users/bibekkumarbazaz/AnypointStudio/mule4-workspace/bbazaz-scientific-calculator/target/munitworkingdir-176835227754045",
+    "log4JConfigurationFilePath": "",
+    "mavenConfiguration": {
+      "settingsXmlFilePath": "/Users/bibekkumarbazaz/.m2/settings.xml",
+      "globalSettingsXmlFilePath": "/Applications/apache-maven-3.6.3/conf/settings.xml",
+      "mavenRepositoryDirectoryPath": "/Users/bibekkumarbazaz/.m2/repository",
+      "offlineMode": false,
+      "forcePolicyUpdate": true,
+      "ignoreArtifactDescriptorRepositories": false
+    },
+    "serverPluginConfigurations": []
+  }
+}
